@@ -1,0 +1,25 @@
+# Secrets
+.env
+*.creds
+*.key
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# Active planning files (tracked manually, not auto-committed)
+# Uncomment these if you want to exclude WIP planning from commits:
+# /task_plan.md
+# /findings.md
+# /progress.md
