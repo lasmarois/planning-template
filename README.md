@@ -2,15 +2,32 @@
 
 Reusable project template for Claude Code goal-based planning workflow.
 
+## Prerequisites
+
+This template depends on the [planning-with-files](https://github.com/OthmanAdi/planning-with-files) skill for Claude Code. Install it before using this template.
+
+### Install planning-with-files
+
+```bash
+# Recommended — Claude Code plugin
+/plugin marketplace add OthmanAdi/planning-with-files
+/plugin install planning-with-files@planning-with-files
+```
+
+Verify it's working by starting a Claude Code session — you should see the skill loaded, or type `/planning-with-files` to invoke it manually.
+
+> See the [planning-with-files docs](https://github.com/OthmanAdi/planning-with-files/blob/master/docs/installation.md) for alternative installation methods.
+
 ## Quick Start
 
-1. Copy this template into a new project directory
-2. Initialize git: `git init && git add -A && git commit -m "chore: init from planning template"`
-3. Customize `.claude/rules/project-overview.md` with your architecture
-4. Customize `.claude/rules/workflow/local-dev.md` with your dev setup
-5. Add external repos to `.claude/settings.json` → `additionalDirectories`
-6. Define milestones in `.planning/MILESTONES.md`
-7. Start your first goal: update `.planning/GOALS.md` and invoke `/planning-with-files`
+1. Click **"Use this template"** on GitHub (or copy the directory manually)
+2. Clone your new repo and `cd` into it
+3. Install the planning-with-files skill (see above)
+4. Customize `.claude/rules/project-overview.md` with your architecture
+5. Customize `.claude/rules/workflow/local-dev.md` with your dev setup
+6. Add external repos to `.claude/settings.json` → `additionalDirectories`
+7. Define milestones in `.planning/MILESTONES.md`
+8. Start your first goal: update `.planning/GOALS.md` and invoke `/planning-with-files`
 
 ## Directory Structure
 
