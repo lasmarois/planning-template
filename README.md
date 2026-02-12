@@ -18,6 +18,15 @@ Verify it's working by starting a Claude Code session — you should see the ski
 
 > See the [planning-with-files docs](https://github.com/OthmanAdi/planning-with-files/blob/master/docs/installation.md) for alternative installation methods.
 
+### Disable auto-compacting
+
+> **Strongly recommended:** Disable auto-compact in Claude Code and use `/clear` between goals instead. The planning-with-files skill has a built-in session recovery mechanism — when you start a new session or `/clear`, it reads `task_plan.md`, `findings.md`, and `progress.md` to catch up on context. Auto-compacting loses nuance from your conversation and works against this file-based recovery. Let the planning files be your memory, not the compressed context.
+
+```bash
+# In Claude Code settings or ~/.claude/settings.json
+claude config set --global autoCompact false
+```
+
 ## Quick Start
 
 1. Click **"Use this template"** on GitHub (or copy the directory manually)
