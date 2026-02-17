@@ -60,9 +60,9 @@
       {
         "hooks": [
           {
-            "type": "prompt",
-            "prompt": "Check if an active goal is in progress by looking for task_plan.md references in the conversation. If a goal is active, verify that progress.md was mentioned or updated during this turn. If significant work was done but progress.md was not updated, respond with {\"ok\": false, \"reason\": \"Update progress.md before stopping. Log what was done this session.\"}. If no goal is active or progress was updated, respond with {\"ok\": true}. Context: $ARGUMENTS",
-            "timeout": 15
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/stop-progress-check.sh",
+            "timeout": 10
           }
         ]
       }
